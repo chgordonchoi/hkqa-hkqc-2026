@@ -484,6 +484,28 @@ html.lang-en .group-title.en, html.lang-en .position-name.en, html.lang-en .posi
     max-width: 95%;
   }
 }
+
+/*Smaller screens */
+@media (max-width: 640px) {
+  .navbar {
+    flex-wrap: wrap;          /* allow 2 rows */
+    row-gap: 0.5rem;
+  }
+
+  .navbar-logo {
+    order: 1;
+    flex: 0 0 auto;
+  }
+
+  .navbar-menu {
+    order: 2;
+    flex: 1 0 100%;           /* force next line */
+    justify-content: center;  /* center the buttons + language toggle */
+    flex-wrap: wrap;          /* allow wrap inside the menu too */
+    gap: 0.35rem;
+  }
+}
+
 /* 手機 Navbar 極致收窄 */
 @media (max-width: 480px) {
   .navbar {
