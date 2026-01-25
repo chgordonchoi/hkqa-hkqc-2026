@@ -282,6 +282,12 @@ html.lang-en .nav-link.en { display: block; }
   line-height: 1.8;
 }
 
+.bilingual-text > .btn,
+.bilingual-text a.btn {
+  width: fit-content;
+  display: inline-block;
+}
+
 .quadball-intro p.zh { display: block; }
 .quadball-intro p.en { display: none; }
 html.lang-en .quadball-intro p.zh { display: none; }
@@ -484,6 +490,23 @@ html.lang-en .group-title.en, html.lang-en .position-name.en, html.lang-en .posi
 }
 
 .footer-social { display: flex; justify-content: center; }
+
+/* Footer logo sizing relative to social pill */
+.site-footer .footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.site-footer .social-pill { width: fit-content; }
+
+.site-footer .footer-logo {
+  width: min(110%, 500px); /* 120% of pill, but not ridiculously large */
+  max-width: 110%;
+  height: auto;
+  display: block;
+}
 
 .social-pill {
   display: inline-flex;
