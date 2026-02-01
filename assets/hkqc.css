@@ -353,6 +353,27 @@ html.lang-en .quadball-intro p.en { display: block; }
   margin: 0 auto;             /* horizontally center */
 }
 
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  z-index: 2;              /* make arrows sit above images */
+}
+
+.carousel-arrow.prev { left: 10px; }
+.carousel-arrow.next { right: 10px; }
+
 /* Optional: mobile can ignore the 70vh cap if you like */
 @media (max-width: 768px) {
   .carousel {
