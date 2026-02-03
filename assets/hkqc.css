@@ -205,6 +205,48 @@ html.lang-en .nav-link.en { display: block; }
   text-align: right;
 }
 
+/* Modal buttons: consistent sizing + bilingual */
+.modal-footer {
+  padding: 0 1.5rem 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.modal-footer .btn {
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  padding: 0.55rem 1.1rem;
+}
+
+/* Allow the inner span to wrap onto 2 lines, centered */
+.modal-footer .btn span {
+  display: inline-block;
+  white-space: normal;
+}
+
+
+/* Fix secondary button contrast (keep your #888 bg) */
+.modal-footer .btn-secondary {
+  background-color: #888 !important;
+  border-color: rgba(255,255,255,0.6) !important;
+  color: #fff !important;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: #666 !important;
+  color: #fff !important;
+}
+
+/* Bilingual text inside modal buttons */
+.modal-footer .btn span.zh,
+.modal-footer .btn span.en {
+  line-height: 1.2;
+  font-weight: 500;
+}
+
 /* Dismissed state */
 .modal-overlay.dismissed {
   opacity: 0;
@@ -691,7 +733,7 @@ html.lang-en .group-title.en, html.lang-en .position-name.en, html.lang-en .posi
   font-size: 1.3rem;
   color: rgba(255, 255, 255, 0.85);
   font-style: italic;
-  white-space: pre-line; /* 確保 <br> 生效 */
+  /* white-space: pre-line; 確保 <br> 生效 */
 }
 
 /* Footer */
