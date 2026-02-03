@@ -172,6 +172,7 @@ html.lang-en .nav-link.en { display: block; }
 .modal-header h3 {
   font-size: 1.3rem;
   font-weight: 700;
+  color: rgb(64, 27, 38);
   margin: 0;
 }
 
